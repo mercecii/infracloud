@@ -1,7 +1,12 @@
 import React from 'react';
+import LineChart from './components/LineChart';
 
 function App() {
-  return <div className="App">Hello World</div>;
+  return (
+    <>
+      <LineChart />
+    </>
+  );
 }
 
 export default App;
