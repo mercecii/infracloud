@@ -27,6 +27,13 @@ ChartJS.register(TimeScale, LinearScale, PointElement, LineElement, Title, Toolt
 
 const LineChart = () => {
   const [dataSets, setDataSets] = useState<IDataSet[]>([]);
+  const getUniqueApiAsLabel = (data: IData[]) => {
+    const labels = new Set<string>([]);
+    data.forEach((el, ind) => {
+      labels.add(el.endpoint);
+    });
+    return labels;
+  };
   const labels = useMemo(() => getUniqueApiAsLabel(rawData), []);
 
   const getMinDateInData = () => {
@@ -55,14 +62,6 @@ const LineChart = () => {
 
   const [startDate, setStartDate] = useState<string>(getMinDateInData());
   const [endDate, setEndDate] = useState<string>(getMaxDateInData());
-
-  const getUniqueApiAsLabel = (data: IData[]) => {
-    const labels = new Set<string>([]);
-    data.forEach((el, ind) => {
-      labels.add(el.endpoint);
-    });
-    return labels;
-  };
 
   const createDataSetsForLabel = useCallback(
     (rawData: IData[], startDate = '', endDate = '') => {
