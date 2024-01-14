@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/infracloud/static/js/main.7a02a966.js",
+    "main.js": "/infracloud/static/js/main.7ffba74b.js",
     "index.html": "/infracloud/index.html",
-    "main.7a02a966.js.map": "/infracloud/static/js/main.7a02a966.js.map"
+    "main.7ffba74b.js.map": "/infracloud/static/js/main.7ffba74b.js.map"
   },
   "entrypoints": [
-    "static/js/main.7a02a966.js"
+    "static/js/main.7ffba74b.js"
   ]
 }
