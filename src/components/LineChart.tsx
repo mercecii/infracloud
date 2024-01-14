@@ -114,7 +114,7 @@ const LineChart = () => {
             plugins: {
               title: {
                 display: true,
-                text: 'Traffic of APIs',
+                text: 'Traffic of APIss',
               },
               legend: {
                 display: true,
